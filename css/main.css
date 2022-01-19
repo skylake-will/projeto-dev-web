@@ -107,3 +107,32 @@ width: 100%;
 float: left;
 position: relative;
 }
+
+/* footer */
+footer {
+   
+    padding-top: 5em;
+    padding-bottom: 40px;
+    border-top: 5px;
+    border-top: 5px solid #333;
+}
+
+footer h2, footer p, footer a, footer span{
+    color: black;
+}
+
+footer h2 {
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+}
