@@ -65,7 +65,7 @@ height: 50px;
 }
 
 .menu ul li:hover {
-border-bottom: 3px solid purple;
+border-bottom: 4px solid purple;
 }
 
 .menu ul li a:hover {
