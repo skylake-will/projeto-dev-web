@@ -1,4 +1,5 @@
 body {
+overflow-x: hidden;
 width: 100%;
 height: 100%;
 margin: 0 auto;
@@ -108,31 +109,131 @@ float: left;
 position: relative;
 }
 
-/* footer */
-footer {
-   
-    padding-top: 5em;
-    padding-bottom: 40px;
-    border-top: 5px;
-    border-top: 5px solid #333;
+button.slick-prev{
+
+font-size: 0px;
+border: none;    
+width: 75px;
+height: 75px;
+z-index: 9;
+background-color: transparent;
+position: absolute;
+background-image: url('../img/retroceder-removebg-preview.png');
+top: 35%;
+left: 5%;
 }
 
-footer h2, footer p, footer a, footer span{
-    color: black;
-}
+button.slick-next{
 
-footer h2 {
-    font-weight: 400;
-}
+    font-size: 0px;
+    border: none;    
+    width: 75px;
+    height: 75px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../img/avançar.png');
+    top: 35%;
+    right: 5%;
+    }
 
-footer a {
-    text-decoration: none;
-}
+ /* footer */
+    footer {
+       
+        padding-top: 5em;
+        padding-bottom: 40px;
+        border-top: 5px;
+        border-top: 5px solid darkorange;
+    }
+    /*mudando a cor das tags*/
+    footer h2, footer p, footer a, footer span{
+        color: white;
+    }
+    /*mudando o tamanho e tirando o estilo padrão*/
+    footer h2 {
+        font-weight: 400;
+    }
+    
+    footer a {
+        text-decoration: none;
+    }
+    
+    footer ul {
+        padding: 0;
+    }
+    
+    footer li {
+        list-style: none;
+    }
+    /*fazendo estlo das classes que tiramos o estilo*/   
+    .footer-box {
+       width: 31%; 
+       padding: 1%;
+       float: left;
+    }/*fazendo o layout das footer-box uma ao lado da outra*/
 
-footer ul {
-    padding: 0;
-}
+    footer .wrapper:after {
+        clear: both;
+        content: "";
+        display: block;
+    }/*limpando o float do wrapper*/
 
-footer li {
-    list-style: none;
-}
+    .company-footer {
+        width: 80%;
+    }/*fazendo o estilo do company-footer*/
+
+    .company-footer h2 {
+        margin-top: 20px;
+    }
+
+    .company-footer h2, .company-footer p {
+        margin-bottom: 20px;
+    }
+
+    .footer-list li {
+        margin-bottom: 15px;
+    }/*espaçamento de uma li da outra*/
+
+    .footer-list a {
+        transition: .5%;
+    }
+
+    .footer-list a:hover {
+        color: darkorange;
+    }/*muda de cor quando passa o mouse em cima*/
+
+    .footer-list li:after {
+        clear:both;
+        content: "";
+        display: block;
+    }
+
+    .article-footer {
+        width: 80%;
+    }
+
+    .footer-list.footer-article-list span {
+        display: block;
+        float: none;
+    }/*elemento span sendo posicionado em bloco*/
+
+    .fab {
+        font-size: 30px;
+        margin-right: 10px;
+        float: left;
+    }
+
+    .footer-list li span {
+        float: left;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .footer-botton {
+        border-top: 1px solid darkorange;
+    }
+
+    .footer-botton p {
+        font-weight: 600;
+        margin-top: 40px;
+    }
