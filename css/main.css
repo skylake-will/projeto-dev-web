@@ -15,7 +15,7 @@ background-color: darkorange;
 height: 65px;
 }
 
-main {
+main, .content {
 margin: 0 auto;
 width: 980px;
 position: relative;
@@ -137,6 +137,53 @@ button.slick-next{
     right: 5%;
     }
 
+.slick-list {
+width: 100%!important;
+}
+.slick-initialized {
+    overflow: hidden;
+}
+
+.slick-dots li button{
+font-size: 0px;
+border: 5px solid orange;
+width: 26px;
+height: 26px;
+background: transparent;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.slick-dots{
+margin: 0 auto;
+width: 50%;
+position: absolute;
+left: 50%;
+top: 285px;
+}
+
+li.slick-active button{
+background: purple;
+}
+
+.slick-dots li{
+display: inline-block;
+padding-left:10px ;
+}
+
+.texto-destaque{
+    text-align: center;
+}
+
+.texto-destaque strong{
+color: purple;
+}
+
+.texto-destaque h1{
+color: darkorange;
+
+}
+
  /* footer */
  footer {
        
@@ -241,4 +288,47 @@ footer .wrapper:after {
 .footer-botton p {
     font-weight: 600;
     margin-top: 40px;
+}
+
+@media screen and (max-width: 1920px){
+    .redes-sociais{
+        width: 30%;
+        float: right;
+        }
+        
+        .redes-sociais ul li{
+        display: inline-block;
+        margin-left: 15px;
+        float: left;
+        list-style: none;
+        }
+}
+
+@media screen and (max-width: 1024px){
+    .redes-sociais{
+        width: 30%;
+        float: left;
+        }
+        
+        .redes-sociais ul li{
+        display: inline-block;
+        margin-left: 15px;
+        float: left;
+        list-style: none;
+        } 
+}
+
+@media screen and (max-width: 1920px){
+    .redes-sociais{
+        width: 30%;
+        float: right;
+        }
+        
+        .redes-sociais ul li{
+        display: inline-block;
+        margin-left: 15px;
+        float: left;
+        list-style: none;
+        }
+
 }
