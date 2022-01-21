@@ -1,0 +1,43 @@
+.busca1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+     }
+     
+     .busca1 input {
+     margin-top: 10px;
+     background-image: url('../img/search-icon.png');
+     background-repeat: no-repeat;
+     background-position: 90%;
+     border: 1px solid white;
+     height: 10px;
+     padding: 12px;
+     width: 500px;
+     }
+ 
+     .mapa{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         margin-top: 30px;
+         margin-bottom: 30px;
+     }
+ 
+     h1{
+         color: white;
+         text-align: center;
+     }
+ 
+     h4 {
+         margin-left: 50px;
+         color: white;
+     }
+ 
+     .sumario {
+         margin-left: 50px;
+         color: white;
+     }
+ 
+     .sumario details:hover {
+         color: darkorange;
+     }

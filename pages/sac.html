@@ -1,16 +1,15 @@
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/main.css" media="">
-    <link rel="stylesheet" type="text/css" href="../css/cadastro.css" media="">
-
-
-
-    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/sac.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>SAC</title>
 </head>
+
+
 
 <body>
 
@@ -41,7 +40,6 @@
                         </li>
                     </ul>
                 </div>
-            </div>
         </main>
     </header>
 
@@ -72,68 +70,50 @@
         </div>
     </main>
 
-    <div style="text-align: center;">
-        <h1 id="titulo">Cadastro</h1>
-        <p id="subtitulo">Informe os seus dados abaixo para criar sua conta.</p>
-        <br>
+    <h1>Como podemos ajudar você hoje?</h1>
+    <div class='busca1'>
+        <input placeholder="Qual sua dúvida?" type="text" />
+
+    </div>
+    <br>
+    <br>
+    <div>
+        <h4>Dúvidas frequentes</h4>
     </div>
 
+    <div class="sumario">
+        <details>
+            <summary>Posso alterar o endereço de entrega com o objeto em transporte? </summary>
+            <p>Quando seu pedido já estiver em transporte, infelizmente não será possível alterar o endereço de entrega.
+            </p>
+        </details>
 
+        <details>
+            <summary>Qual é o prazo para confirmação de pagamento? </summary>
+            <p>Pagamentos efetuados via Boleto Bancário e Cartão de Crédito têm um prazo de 1 a 2 dias úteis para
+                confirmação; já para pagamentos via PIX, o prazo de confirmação é de até 30 minutos.
+            </p>
+        </details>
 
-    <div class="formcadastro">
+        <details>
+            <summary>Como comprar pelo PIX? </summary>
+            <p>Ao finalizar a sua compra pelo PC, um QR Code será gerado na tela de conclusão do seu pedido. Abra o
+                aplicativo do seu banco pelo smartphone, siga até a opção PIX e escolha o “pagamento por QR Code”.
+            </p>
+        </details>
 
+        <details>
+            <summary>Qual o prazo para envio (postagem) do meu pedido? </summary>
+            <p>O prazo para envio de pedidos de peças é de até 3 dias úteis após confirmado o pagamento, esse tempo se
+                faz necessário para separação, embalagem, faturamento e postagem de seu pedido.
+            </p>
+        </details>
+    </div>
 
-
-        <form>
-            <!-- Início do formulário -->
-            <fieldset class="grupo">
-                <div class="campo">
-                    <!--nome-->
-                    <label for="nome"><strong>Nome</strong></label>
-                    <input type="text" name="nome" id="nome" required>
-                </div>
-                <div class="campo">
-                    <!--sobrenome-->
-                    <label for="sobrenome"><strong>Sobrenome</strong></label>
-                    <input type="text" name="sobrenome" id="sobrenome" required>
-                </div>
-            </fieldset>
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="rg"><strong>RG</strong></label>
-                    <input type="text" name="rg" id="rg" maxlength="7" minlength="7" required>
-                </div>
-                <div class="campo">
-                    <label for="cpf"><strong>CPF</strong></label>
-                    <input type="text" name="cpf" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
-                        title="Digite um CPF no formato: xxx.xxx.xxx-xx" maxlength="14" minlength="14" required>
-                </div>
-            </fieldset>
-            <fieldset class="grupo">
-                <div class="campo">
-                    <!-- Campo email-->
-                    <label for="email"><strong>Email</strong></label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-            </fieldset>
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="senha"><strong>Senha</strong></label>
-                    <input type="text" name="senha" id="senha">
-                    <br> <input type="submit" value="Verificar" required>
-                    <link rel="stylesheet" href="../css/cadastro.css" media="">
-                </div>
-            </fieldset>
-            <fieldset class="grupo">
-                <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
-                <!-- <div id="check">
-                    <input type="checkbox" id="termos" name="termos" value="CSS" required>
-                    <label for="termos"> Estou ciente e CONCORDO com os termos de aceite e políticas de privacidade da
-                        5FoxGaming.</label>
-                </div> -->
-            </fieldset>
-            <button class="botao" type="submit">Criar cadastro</button>
-        </form>
+    <div class="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.5486204635563!2d-34.897888885821374!3d-7.942118281307977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab16688f853189%3A0x470be3a2674338a4!2sR.%20Santa%C2%AA%20Paulina%2C%20Paulista%20-%20PE%2C%2053417-041!5e0!3m2!1spt-BR!2sbr!4v1642728474519!5m2!1spt-BR!2sbr"
+            width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
     <footer>
@@ -210,9 +190,10 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b3b79f5154.js" crossorigin="anonymous"></script>
 
-
-    <script type="text/javascript" src="../js/cadastro.js"></script>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 
 
 </body>
